@@ -1,0 +1,78 @@
+body {
+	background: #eee;
+	font-family: sans-serif;
+}
+
+#wrapper {
+	background: #fff;
+	width: 1440px;
+	margin: 20px auto;
+}
+
+#wrapper header {
+	background: #0044F4;
+	padding: 10px;
+	font-size: 10px;
+}
+
+h1.keyto {
+	float: center;
+	padding-left: 150px;
+	color: #fff;
+}
+
+img.logo {
+	float: left;
+	width: 110px;
+	margin-top: -50px;
+}
+
+#wrapper header nav {
+	float: right;
+	margin-top: -10px;
+	font-size: 15px;
+}
+
+#wrapper header nav ul {
+	padding: 0;
+	margin: 0;
+}
+
+#wrapper header nav ul li {
+	float: left;
+	list-style: none;
+}
+
+#wrapper header nav ul li a {
+	padding: 15px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.clear {
+	clear: both;
+}
+
+footer {
+	background: #000;
+	height: 100px;
+	padding: 20px;
+}
+
+footer a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 15px;
+}
+
+section {
+	padding: 20px;
+	color: #000;
+	font-size: 15px;
+}
+
+section h1.judul {
+	padding: 20px;
+	color: #0044F4;
+	font-size: 15px;
+}
