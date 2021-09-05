@@ -49,7 +49,7 @@
       </p>
     </section>
     <footer>
-      <a href="https://www.malasngoding.com">MalasNgoding</a>
+      <a>Malas Ngoding</a>
     </footer>
   </div>
 </body>
