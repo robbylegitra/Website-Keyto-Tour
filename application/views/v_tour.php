@@ -8,8 +8,8 @@
 <body>
   <div id="wrapper">
     <header>
+    <img class="logo_keyto_header" src="<?php echo base_url(); ?>assets/image/keyto_text.png">
       <hgroup>
-        <h1 class="keyto">PT. KEYTO TOUR & TRAVEL LAMPUNG</h1>
         <img class="logo" src="<?php echo base_url(); ?>assets/image/logo.png">
       </hgroup>
       <nav>
