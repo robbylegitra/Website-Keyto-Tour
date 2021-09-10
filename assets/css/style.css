@@ -59,10 +59,130 @@ footer {
 	padding: 20px;
 }
 
-footer a {
+footer h1 {
+	float: center;
+	margin-top: -10px;
+	height: 20.8px;
+	padding-left: 150px;
+	font-size: x-large;
 	color: #fff;
-	text-decoration: none;
+}
+
+iframe {
+	zoom: 1;
+	float: left;
+	width: 110px;
+	height: 110px;
+	margin-top: -28px;
+	
+}
+img.logo_hp {
+    position: relative;
+    width: 25px;
+	height: 25px;
+	margin-top: -40px;
+	padding-left: 38px;
+    min-width: 24.17px;
+    margin: 5.13px 0px 13.36px;
+  }
+
+  div.text_nohp {
+	position: relative;
+	margin-top: -35px;
+	float: center;
+	padding-left: 180px;
+	font-size: 12px;
+	color: #fff;
+}
+
+div.text_keyto {
+	position: relative;
+	margin-top: -60px;
+	float: center;
+	padding-left: 450px;
+	font-size: 18px;
+	color: #fff;
+}
+
+div.text_tentangkami {
+	position: relative;
+	margin-top: 2px;
+	float: center;
+	padding-left: 450px;
+	font-size: 12px;
+	color: #fff;
+}
+
+div.text_hubkami {
+	position: relative;
+	margin-top: 5px;
+	float: center;
+	padding-left: 450px;
+	font-size: 12px;
+	color: #fff;
+}
+
+div.text_faq {
+	position: relative;
+	margin-top: 7px;
+	float: center;
+	padding-left: 450px;
+	font-size: 12px;
+	color: #fff;
+}
+div.text_copyright {
+	position: relative;
+	margin-top: -5px;
+	float: center;
+	padding-left: 700px;
+	font-size: 12px;
+	color: #fff;
+}
+
+div.text_followus {
+	position: relative;
+	margin-top: -90px;
+	float: center;
+	padding-left: 1000px;
 	font-size: 15px;
+	color: #fff;
+}
+
+img.logo_email {
+    position: relative;
+    width: 25px;
+	height: 25px;
+	padding-left: 38px;
+    min-width: 24.17px;
+    margin: 15px 0px 15px;
+  }
+
+div.text_email {
+	position: relative;
+	margin-top: -35px;
+	float: center;
+	padding-left: 182px;
+	font-size: 12px;
+	color: #fff;
+}
+
+img.logo_fb {
+	position: relative;
+	width: 25px;
+	height: 25px;
+	margin-top: -40px;
+	padding-left: 890px;
+    min-width: 24.17px;
+    margin: 5.13px 0px 13.36px;
+}
+
+img.logo_twitter {
+	position: relative;
+	width: 25px;
+	height: 25px;
+	margin-top: -39px;
+	padding-left: 930px;
+    min-width: 24.17px;
 }
 
 section {
@@ -75,4 +195,5 @@ section h1.judul {
 	padding: 20px;
 	color: #0044F4;
 	font-size: 15px;
+	zoom: 12;
 }
