@@ -16,7 +16,10 @@
         <ul>
           <li><a href="<?php echo base_url() . 'index.php/page_tour/beranda' ?>">Beranda</a></li>
           <li><a href="<?php echo base_url() . 'index.php/page_tour' ?>">Paket Tour</a></li>
-          <li><a href="<?php echo base_url() . 'index.php/page_tour/artikel' ?>">Blog</a></li>
+          <li><a href="<?php echo base_url() . 'index.php/page_tour/artikel' ?>">Blog &#9662;</a>
+          <ul class="sub1">
+          <li><a href="<?php echo base_url() . 'index.php/page_tour/galerry' ?>">Gallery</a>
+                </ul></li>
           <li><a href="<?php echo base_url() . 'index.php/page_tour/faq' ?>">FAQ</a></li>
           <li><a href="<?php echo base_url() . 'index.php/page_tour/tentang_kami' ?>">Tentang Kami</a></li>
         </ul>
