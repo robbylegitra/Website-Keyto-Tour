@@ -9,9 +9,11 @@ body {
 	margin: 20px auto;
 }
 
-#wrapper header {
+ header {
 	background: #0044F4;
-	padding: 10px;
+	width: 1440px;
+	height: 102px;
+	padding: 20px;
 	font-size: 10px;
 }
 
@@ -20,11 +22,17 @@ h1.keyto {
 	padding-left: 150px;
 	color: #fff;
 }
-
+img.logo_keyto_header {
+	float: center;
+    padding-left: 150px;
+	width: 560px;
+	height: 30px;
+	margin-top: 40px;
+}
 img.logo {
 	float: left;
 	width: 110px;
-	margin-top: -50px;
+	margin-top: -60px;
 }
 
 #wrapper header nav {
@@ -55,6 +63,7 @@ img.logo {
 
 footer {
 	background: #000;
+	width: 1440px;
 	height: 100px;
 	padding: 20px;
 }
@@ -198,6 +207,9 @@ img.logo_twitter {
 
 section {
 	padding: 20px;
+	background-color: #fff;
+	width: 1440px;
+	height: 720px;
 	color: #000;
 	font-size: 15px;
 }
