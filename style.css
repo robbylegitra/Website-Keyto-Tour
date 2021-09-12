@@ -1,0 +1,15 @@
+.jumbotron {
+	background-image: url(pic1.jpg);
+	background-size: cover;
+	text-align: center;
+	height: 540px;
+	margin-top: 0px;
+}
+
+.jumbotron .display-4 {
+	
+}
+
+.carousel-item {
+	height: 550px;
+}
