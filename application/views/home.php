@@ -319,19 +319,9 @@
               </div>
           </div>
           <div class="col">
-            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Product</h5>
-            <p><a href="" class="text-white" style="text-decoration: none;">Beranda</a></p>
-            <p><a href="" class="text-white" style="text-decoration: none;">Paket Tour</a></p>
-            <p><a href="" class="text-white" style="text-decoration: none;">Blog</a></p>
-            <p><a href="" class="text-white" style="text-decoration: none;">Tentang Kami</a></p>
-          </div>
-          <div class="col">
-            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Useful Links</h5>
-            <p><a href="" class="text-white" style="text-decoration: none;">Beranda</a></p>
-            <p><a href="" class="text-white" style="text-decoration: none;">Paket Tour</a></p>
-            <p><a href="" class="text-white" style="text-decoration: none;">Blog</a></p>
-            <p><a href="" class="text-white" style="text-decoration: none;">Tentang Kami</a></p>
-          </div>
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Keyto Tours & Travel</h5>
+            <p><a href="" class="text-white" style="text-decoration: none;">Bandar Lampung</a></p>
+            </div>
           <div class="col">
             <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contacts</h5>
             <p><i class="fas fa-home mr-3"></i> Bandar Lampung, Indonesia</p>
