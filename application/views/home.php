@@ -325,9 +325,11 @@
           <div class="col">
             <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contacts</h5>
             <p><i class="fas fa-home mr-3"></i> Bandar Lampung, Indonesia</p>
-            <p><i class="fab fa-whatsapp mr-3"></i> +62 xxx xxx xxx</p>
-            <p><i class="fab fa-facebook-f mr-3"></i> mail@mail.com</p>
-            <p><i class="fab fa-instagram" aria-hidden="true"></i> +62 xxx xxx xxx</p>
+            <p><a href="<?= base_url('wa.me/6282184016785');?>"><i class="fab fa-whatsapp mr-3"></i></a>
+              <a href="<?= base_url('https://www.facebook.com/keytotours.lampung');?>"><i class="fab fa-facebook-f mr-3"></i></a>
+              <a href="<?= base_url('https://www.instagram.com/keyto.tourtravel/?');?>"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+            </p>
+            <p><a href=""><i class="fas fa-envelope mr-3"></i></a> mail@mail.com </p>
           </div>
         </div>
       </div>
