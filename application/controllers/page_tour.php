@@ -8,17 +8,14 @@ class page_tour extends CI_Controller
   {
     parent::__construct();
     $this->load->helper('url');
+     $this->load->model('m_tbpakettour');
   }
 
   public function index()
   {
     $data['judul'] = "Paket Tour";
+    $data['paket_tour'] = $this->m_tbpakettour->tampil_data()->result(); 
     $this->load->view('v_tour', $data);
   }
-  public function artikel(){		
-		$data['judul'] = "Halaman artikel";
-		$this->load->view('v_artikel',$data);
-		
-	}
 }
 

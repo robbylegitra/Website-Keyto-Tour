@@ -1,82 +1,147 @@
 <html>
-
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/style.css?v=1.1">
-</head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    
+    <!-- Link Font Awesome -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+      <style type="text/css">
+      /*Style Jumbotron*/
+      .jumbotron {
+        background-image: url(pic2.jpg);
+        background-size: cover;
+        height: 400px;
+        text-align: center;
+      }
+      .jumbotron .display-4 {
+        color: white;
+        padding-top: 60px;
+        font-weight: bold;
+      }
+      .jumbotron p {
+        color: white;
+      }
+
+      /*Style Carousel*/
+      .carousel-item {
+        height: 500px;
+      }
+      .carousel-item .display-4 {
+        margin-top: -350px;
+      }
+
+      .mapalign {
+        align-content: left;
+      }
+    </style>  
 
 <body>
-  <div id="wrapper">
-    <header>
-    <img class="logo_keyto_header" src="<?php echo base_url(); ?>assets/image/keyto_text.png">
-      <hgroup>
-        <img class="logo" src="<?php echo base_url(); ?>assets/image/logo.png">
-      </hgroup>
-      <nav>
-        <ul>
-          <li><a href="<?php echo base_url() . 'index.php/page_tour/beranda' ?>">Beranda</a></li>
-          <li><a href="<?php echo base_url() . 'index.php/page_tour' ?>">Paket Tour</a></li>
-          <li><a href="<?php echo base_url() . 'index.php/page_tour/artikel' ?>">Blog &#9662; </a>
-          <ul class="sub1">
-          <li><a href="<?php echo base_url() . 'index.php/page_tour/galerry' ?>">Gallery</a>
-                </ul></li>
-          <li><a href="<?php echo base_url() . 'index.php/page_tour/faq' ?>">FAQ</a></li>
-          <li><a href="<?php echo base_url() . 'index.php/page_tour/tentang_kami' ?>">Tentang Kami</a></li>
-        </ul>
-      </nav>
-      <div class="clear"></div>
-    </header>
-    <section>
-      <h1>Home/<?php echo $judul ?></h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-    </section>
-    <footer>
-    <img class="logo_keyto" src="<?php echo base_url(); ?>assets/image/keyto_text.png">
-      <!-- google maps -->
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.9873608010453!2d105.25118761425763!3d-5.418889596069829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40da4541c476e3%3A0xaf066465d369d952!2sKantor%20PT.Keyto%20Tour%20and%20Travel!5e0!3m2!1sid!2sid!4v1631262910718!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        <img class="logo_hp" src="<?php echo base_url(); ?>assets/image/log_hp.png">
-                <div class="text_nohp">
-                  +62 (0)6969 6969 69
-                </div>
-        <img class="logo_email" src="<?php echo base_url(); ?>assets/image/logo_email.png">
-        <div class="text_email">inigmail@gmail.com</div>
-
-        <div class="text_keyto">TENTENG PT. KEYTO TOUR &amp; TRAVEL LAMPUNG</div>
-        <div class="text_tentangkami">&gt;   Tentang Kami</div>
-        <div class="text_hubkami">&gt;   Hubungi Kami</div>
-        <div class="text_faq">&gt;   F.A.Q</div>
-        <div class="text_copyright">© Copyright - 14117177</div>
-
-        <div class="text_followus">FOLLOW US</div>
-        <img class="logo_fb" src="<?php echo base_url(); ?>assets/image/logo_fb.png">
-        <img class="logo_twitter" src="<?php echo base_url(); ?>assets/image/logo_twitter.png">
-
-
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-sm" id="mainNav">
+      <div class="container">
+        <img src="<?= base_url('assets/image/logo.PNG'); ?>" alt="" width="30" height="24">
+        <a class="navbar-brand ml-3" href="#">Keyto Tour & Travel</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
         
-
-    </footer>
+        <div class="collapse navbar-collapse mr-1 " id="navbarNav">
+          <ul class="navbar-nav ms-auto"> 
+            <li class="nav-item active font-weight-bold text-white">
+              <a href="<?= base_url('c_home'); ?>" class="btn btn-warning fw-bold text-white">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="<?= base_url('page_tour'); ?>">Paket Tour</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Blog
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="<?= base_url('c_artikel'); ?>">Artikel</a></li>
+                <li><a class="dropdown-item" href="<?= base_url('c_galeri'); ?>">Galeri</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="<?= base_url('c_tentangkami'); ?>">Tentang Kami</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav><br><br><br>
+  <!-- Navbar End -->
+<div class="card text-center">
+        <?php
+          $no = 1;
+          foreach($artikel as $ar){
+        ?>    
+  <div class="card-header">
+    Featured
   </div>
-</body>
+  <div class="card-body">
+    <h5 class="card-title"><?php echo $ar->judul_artikel ?></h5>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="<?= base_url('c_artikel/detail/'.$ar->id_artikel);?>" class="btn btn-primary">Lihat Artikel</a>
+  </div>
+  <div class="card-footer text-muted">
+    <?php echo $ar->waktu_artikel ?>
+  </div><?php } ?>
+</div>
 
+ <!-- Footer --></div>
+    <footer class="bg-dark text-white pt-5 pb-4">
+
+            <!-- BAGIAN MAP -->
+      <div class="container-fluid">
+        <div class="row align-items-start">
+          <div class="col">
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                  <iframe width="280" height="180" id="gmap_canvas" src="https://maps.google.com/maps?q=keyto%20tour&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                  </iframe>
+                  <a href="https://fmovies-online.net"></a>
+                  <br>
+                  <style>.mapouter{position:relative;text-align:right;height:200px;width:300px;}</style><a href="https://www.embedgooglemap.net">how to add map to website</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:200px;width:300px;}
+                  </style>
+                </div>
+              </div>
+          </div>
+          <div class="col">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Product</h5>
+            <p><a href="" class="text-white" style="text-decoration: none;">Beranda</a></p>
+            <p><a href="" class="text-white" style="text-decoration: none;">Paket Tour</a></p>
+            <p><a href="" class="text-white" style="text-decoration: none;">Blog</a></p>
+            <p><a href="" class="text-white" style="text-decoration: none;">Tentang Kami</a></p>
+          </div>
+          <div class="col">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Useful Links</h5>
+            <p><a href="" class="text-white" style="text-decoration: none;">Beranda</a></p>
+            <p><a href="" class="text-white" style="text-decoration: none;">Paket Tour</a></p>
+            <p><a href="" class="text-white" style="text-decoration: none;">Blog</a></p>
+            <p><a href="" class="text-white" style="text-decoration: none;">Tentang Kami</a></p>
+          </div>
+          <div class="col">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contacts</h5>
+            <p><i class="fas fa-home mr-3"></i> Bandar Lampung, Indonesia</p>
+            <p><i class="fas fa-phone mr-3"></i> +62 xxx xxx xxx</p>
+            <p><i class="fas fa-envelope mr-3"></i> mail@mail.com</p>
+            <p><i class="fa fa-whatsapp" aria-hidden="true"></i> +62 xxx xxx xxx</p>
+          </div>
+        </div>
+      </div>
+      <hr class="mb-4">
+      <div class="row text-center">
+        <p>Copyright @2021 All right reserved</p>
+      </div>
+    </footer>
+  <!-- Footer End -->
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+</body>
 </html>

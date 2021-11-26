@@ -1,5 +1,4 @@
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -38,7 +37,6 @@
         align-content: left;
       }
     </style>  
-</head>
 
 <body>
     <!-- Navbar -->
@@ -77,26 +75,22 @@
       </div>
     </nav><br><br><br>
   <!-- Navbar End -->
-  <h2 class="text-center">Special Offer</h2>
-  <!-- Card Group Paket -->
+
     <div class="container">
-      <div class="row mt-4">
-                <?php
+        <?php
           $no = 1;
-          foreach($paket_tour as $pt){
+          foreach($artikel as $ar){
         ?> 
-        <div class="col-md-auto">
-          <div class="card" style="width: 12rem;">
-            <img src="<?= base_url(); ?>uploads/<?php echo $pt->foto_paket; ?>" class="card-img-top" alt="$pt->label_paket" width="150" height="110">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="<?php echo base_url(); ?>/c_tbpakettour/download/<?php echo $pt->pdf_paket; ?>" class="btn btn-danger">Unduh PDF</a>
-            </div>
+      <h2 class="text-center"><?php echo $ar->judul_artikel ?></h2>
+      <div class="row">
+        <div class="col-md-8">
+          <div class="isi-artikel">
+          <p><?php echo $ar->isi_artikel ?></p>
           </div>
-        </div><?php } ?>
-      </div>
+        </div>
+      </div><?php } ?>  
     </div>
-  <!-- Paket End -->
+
  <!-- Footer --></div>
     <footer class="bg-dark text-white pt-5 pb-4">
 
@@ -148,5 +142,4 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
     </script>
 </body>
-
 </html>
