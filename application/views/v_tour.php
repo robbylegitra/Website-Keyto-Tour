@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/style.css?v=1.1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>  
 </head>
 
 <body>
@@ -14,43 +16,55 @@
       </hgroup>
       <nav>
         <ul>
-          <li><a href="<?php echo base_url() . 'index.php/page_tour/beranda' ?>">Beranda</a></li>
-          <li><a href="<?php echo base_url() . 'index.php/page_tour' ?>">Paket Tour</a></li>
-          <li><a href="<?php echo base_url() . 'index.php/page_tour/artikel' ?>">Blog &#9662;</a>
+          <li><a href="<?= base_url('c_home'); ?>">Beranda</a></li>
+          <li><a href="<?= base_url('page_tour'); ?>">Paket Tour</a></li>
+          <li><a href="<?= base_url('c_artikel'); ?>">Blog &#9662;</a>
           <ul class="sub1">
-          <li><a href="<?php echo base_url() . 'index.php/page_tour/galerry' ?>">Gallery</a>
+          <li><a href="<?= base_url('c_galeri'); ?>">Gallery</a>
                 </ul></li>
-          <li><a href="<?php echo base_url() . 'index.php/page_tour/faq' ?>">FAQ</a></li>
-          <li><a href="<?php echo base_url() . 'index.php/page_tour/tentang_kami' ?>">Tentang Kami</a></li>
+          <li><a href="<?= base_url('c_tentangkami'); ?>">Tentang Kami</a></li>
         </ul>
       </nav>
       <div class="clear"></div>
     </header>
-    <section>
-      <h1>Home/<?php echo $judul ?></h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-    </section>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+  </div>
+</div>
     <footer>
      <img class="logo_keyto" src="<?php echo base_url(); ?>assets/image/keyto_text.png">
       <!-- google maps -->
