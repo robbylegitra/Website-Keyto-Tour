@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 17, 2021 at 05:11 AM
--- Server version: 10.4.20-MariaDB
--- PHP Version: 7.3.29
+-- Waktu pembuatan: 17 Nov 2021 pada 19.20
+-- Versi server: 10.4.17-MariaDB
+-- Versi PHP: 8.0.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `admin`
+-- Struktur dari tabel `admin`
 --
 
 CREATE TABLE `admin` (
@@ -36,7 +36,7 @@ CREATE TABLE `admin` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `admin`
+-- Dumping data untuk tabel `admin`
 --
 
 INSERT INTO `admin` (`id_admin`, `username_admin`, `password_admin`, `nama_admin`, `email_admin`) VALUES
@@ -45,7 +45,7 @@ INSERT INTO `admin` (`id_admin`, `username_admin`, `password_admin`, `nama_admin
 -- --------------------------------------------------------
 
 --
--- Table structure for table `artikel`
+-- Struktur dari tabel `artikel`
 --
 
 CREATE TABLE `artikel` (
@@ -56,7 +56,7 @@ CREATE TABLE `artikel` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `artikel`
+-- Dumping data untuk tabel `artikel`
 --
 
 INSERT INTO `artikel` (`id_artikel`, `judul_artikel`, `waktu_artikel`, `isi_artikel`) VALUES
@@ -65,7 +65,7 @@ INSERT INTO `artikel` (`id_artikel`, `judul_artikel`, `waktu_artikel`, `isi_arti
 -- --------------------------------------------------------
 
 --
--- Table structure for table `galeri`
+-- Struktur dari tabel `galeri`
 --
 
 CREATE TABLE `galeri` (
@@ -76,17 +76,16 @@ CREATE TABLE `galeri` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `galeri`
+-- Dumping data untuk tabel `galeri`
 --
 
 INSERT INTO `galeri` (`id_galeri`, `foto_galeri`, `label_galeri`, `tentang_galeri`) VALUES
-(1, 'WhatsApp_Image_2021-10-25_at_23_37_295.jpeg', 'foto anggara', 'anggara bahagia banget ya ges yakk'),
-(2, 'WhatsApp_Image_2021-11-01_at_21_47_04.jpeg', 'tebe', 'asdad');
+(1, 'WhatsApp_Image_2021-10-25_at_23_37_295.jpeg', 'foto anggara', 'anggara bahagia banget ya ges yakk');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `paket_tour`
+-- Struktur dari tabel `paket_tour`
 --
 
 CREATE TABLE `paket_tour` (
@@ -97,7 +96,7 @@ CREATE TABLE `paket_tour` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `paket_tour`
+-- Dumping data untuk tabel `paket_tour`
 --
 
 INSERT INTO `paket_tour` (`id_paket`, `foto_paket`, `label_paket`, `pdf_paket`) VALUES
@@ -109,53 +108,53 @@ INSERT INTO `paket_tour` (`id_paket`, `foto_paket`, `label_paket`, `pdf_paket`) 
 --
 
 --
--- Indexes for table `admin`
+-- Indeks untuk tabel `admin`
 --
 ALTER TABLE `admin`
   ADD PRIMARY KEY (`id_admin`);
 
 --
--- Indexes for table `artikel`
+-- Indeks untuk tabel `artikel`
 --
 ALTER TABLE `artikel`
   ADD PRIMARY KEY (`id_artikel`);
 
 --
--- Indexes for table `galeri`
+-- Indeks untuk tabel `galeri`
 --
 ALTER TABLE `galeri`
   ADD PRIMARY KEY (`id_galeri`);
 
 --
--- Indexes for table `paket_tour`
+-- Indeks untuk tabel `paket_tour`
 --
 ALTER TABLE `paket_tour`
   ADD PRIMARY KEY (`id_paket`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `admin`
+-- AUTO_INCREMENT untuk tabel `admin`
 --
 ALTER TABLE `admin`
   MODIFY `id_admin` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `artikel`
+-- AUTO_INCREMENT untuk tabel `artikel`
 --
 ALTER TABLE `artikel`
   MODIFY `id_artikel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `galeri`
+-- AUTO_INCREMENT untuk tabel `galeri`
 --
 ALTER TABLE `galeri`
   MODIFY `id_galeri` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `paket_tour`
+-- AUTO_INCREMENT untuk tabel `paket_tour`
 --
 ALTER TABLE `paket_tour`
   MODIFY `id_paket` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;

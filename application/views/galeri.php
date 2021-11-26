@@ -79,18 +79,106 @@
     <div class="container">
     <h1 class="text-center mb-3">Galeri Perjalanan Keyto Tour & Travel</h1>      
       <div class="row mt-2">
-        <?php
-          $no = 1;
-          foreach($galeri as $gl){
-        ?>  
         <div class="item col-sm-6 col-md-2 mb-3">
-          <a href="<?= base_url(); ?>uploads/<?php echo $gl->foto_galeri; ?>" class="fancybox" data-fancybox="gallery1">
-            <img src="<?= base_url(); ?>uploads/<?php echo $gl->foto_galeri; ?>">
+          <a href="pic1.jpg" class="fancybox" data-fancybox="gallery1">
+            <img src="pic1.jpg">
           </a>
-        </div><?php } ?>
+        </div>
+        <div class="item col-sm-6 col-md-2 mb-3">
+          <a href="pic2.jpg" class="fancybox" data-fancybox="gallery1">
+            <img src="pic2.jpg">
+          </a>
+        </div>
+        <div class="item col-sm-6 col-md-2 mb-3">
+          <a href="pic1.jpg" class="fancybox" data-fancybox="gallery1">
+            <img src="pic1.jpg">
+          </a>
+        </div>
+        <div class="item col-sm-6 col-md-2 mb-3">
+          <a href="pic2.jpg" class="fancybox" data-fancybox="gallery1">
+            <img src="pic2.jpg">
+          </a>
+        </div>
+        <div class="item col-sm-6 col-md-2 mb-3">
+          <a href="pic2.jpg" class="fancybox" data-fancybox="gallery1">
+            <img src="pic2.jpg">
+          </a>
+        </div>
+        <div class="item col-sm-6 col-md-2 mb-3">
+          <a href="pic2.jpg" class="fancybox" data-fancybox="gallery1">
+            <img src="pic2.jpg">
+          </a>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="item col-sm-6 col-md-2 mb-3">
+          <a href="pic1.jpg" class="fancybox" data-fancybox="gallery1">
+            <img src="pic1.jpg">
+          </a>
+        </div>
+        <div class="item col-sm-6 col-md-2 mb-3">
+          <a href="pic2.jpg" class="fancybox" data-fancybox="gallery1">
+            <img src="pic2.jpg">
+          </a>
+        </div>
+        <div class="item col-sm-6 col-md-2 mb-3">
+          <a href="pic1.jpg" class="fancybox" data-fancybox="gallery1">
+            <img src="pic1.jpg">
+          </a>
+        </div>
+        <div class="item col-sm-6 col-md-2 mb-3">
+          <a href="pic1.jpg" class="fancybox" data-fancybox="gallery1">
+            <img src="pic1.jpg">
+          </a>
+        </div>
+        <div class="item col-sm-6 col-md-2 mb-3">
+          <a href="pic1.jpg" class="fancybox" data-fancybox="gallery1">
+            <img src="pic1.jpg">
+          </a>
+        </div>
+        <div class="item col-sm-6 col-md-2 mb-3">
+          <a href="pic1.jpg" class="fancybox" data-fancybox="gallery1">
+            <img src="pic1.jpg">
+          </a>
+        </div>
+      </div>
+      <div class="row mt-2">
+        <div class="item col-sm-6 col-md-2 mb-3">
+          <a href="pic2.jpg" class="fancybox" data-fancybox="gallery1">
+            <img src="pic2.jpg">
+          </a>
+        </div>
+        <div class="item col-sm-6 col-md-2 mb-3">
+          <a href="pic2.jpg" class="fancybox" data-fancybox="gallery1">
+            <img src="pic2.jpg">
+          </a>
+        </div>
+        <div class="item col-sm-6 col-md-2 mb-3">
+          <a href="pic2.jpg" class="fancybox" data-fancybox="gallery1">
+            <img src="pic2.jpg">
+          </a>
+        </div>
+        <div class="item col-sm-6 col-md-2 mb-3">
+          <a href="pic2.jpg" class="fancybox" data-fancybox="gallery1">
+            <img src="pic2.jpg">
+          </a>
+        </div>
+        <div class="item col-sm-6 col-md-2 mb-3">
+          <a href="pic2.jpg" class="fancybox" data-fancybox="gallery1">
+            <img src="pic2.jpg">
+          </a>
+      </div>
+      <div class="item col-sm-6 col-md-2 mb-3">
+          <a href="pic2.jpg" class="fancybox" data-fancybox="gallery1">
+            <img src="pic2.jpg">
+          </a>
+      </div>
     </div>
 
- <!-- Footer --></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+
+ <!-- Footer -->
     <footer class="bg-dark text-white pt-5 pb-4">
 
             <!-- BAGIAN MAP -->
@@ -137,8 +225,5 @@
       </div>
     </footer>
   <!-- Footer End -->
-
-  
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
   </body>
 </html>

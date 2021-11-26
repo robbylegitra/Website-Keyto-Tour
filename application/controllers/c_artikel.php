@@ -17,11 +17,5 @@ class c_artikel extends CI_Controller
 		$this->load->view('v_artikel',$data);
 		
 	}
-
-  public function detail($id_artikel){
-    $id_artikel = $this->uri->segment(3);
-    $data['artikel'] = $this->m_tbartikel->tampil_detail($id_artikel);
-    $this->load->view('detail_artikel', $data);
-  }
 }
 

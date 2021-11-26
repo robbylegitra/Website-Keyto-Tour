@@ -35,6 +35,9 @@
     <div class="container">
           <ul class="nav nav-tabs">
             <li class="nav-item">
+              <a class="nav-link" href="<?= base_url('c_admin'); ?>">Carousel</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="<?= base_url('c_admartikel'); ?>">Artikel</a>
             </li>
             <li class="nav-item">
