@@ -325,7 +325,7 @@
           <div class="col">
             <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contacts</h5>
             <p><i class="fas fa-home mr-3"></i> Bandar Lampung, Indonesia</p>
-            <p><i class="fas fa-phone mr-3"></i> +62 xxx xxx xxx</p>
+            <p><i class="fab fa-whatsapp mr-3"></i> +62 xxx xxx xxx</p>
             <p><i class="fas fa-envelope mr-3"></i> mail@mail.com</p>
             <p><i class="fa fa-whatsapp" aria-hidden="true"></i> +62 xxx xxx xxx</p>
           </div>
