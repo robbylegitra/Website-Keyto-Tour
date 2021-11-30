@@ -70,8 +70,6 @@
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="<?= base_url('c_artikel'); ?>">Artikel</a></li>
                 <li><a class="dropdown-item" href="<?= base_url('c_galeri'); ?>">Galeri</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -98,8 +96,8 @@
           <div class="carousel-item active">
             <img src="pic2.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h1 class="display-4">Hello, world!</h1>
-              <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+              <h1 class="display-4">Keyto Tours & Travel</h1>
+              <p class="lead" style="font-size: 28px;">Not just a travel</p>
               <hr class="my-4">
               <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
               <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
@@ -174,49 +172,26 @@
 
 
   <!-- Card Group Paket -->
-    <div class="container mt-5">
+    <div class="container mt-5">     
       <div class="row mb-2">
         <div class="col text-center mb-2"><h3>Rekomendasi Paket Perjalanan</h3></div>
+      </div>       
+      <div class="row mb-4">
+        <?php
+          $no = 1;
+          foreach($paket_tour as $pt){
+        ?>        
+        <div class="col-md-3">
+          <a href="">
+          <div class="card" style="width: 14rem;">
+            <img src="<?= base_url(); ?>uploads/<?php echo $pt->foto_paket; ?>" class="card-img-top" alt="..." width = 259 height = 180>
+            <div class="card-body">
+              <p class="card-text" style="text-decoration: none;"><?php echo $pt->label_paket ?></p>
+            </div>
+            </a>
+          </div>
+      </div><?php } ?>
       </div>
-     
-      <div class="row mb-4">        
-        <div class="col-md-3">
-          <div class="card" style="width: 14rem;">
-            <img src="<?= base_url('assets/image/foto1.gif'); ?>" class="card-img-top" alt="..." width = 259 height = 180>
-            <div class="card-body">
-              <p class="card-text">wtf</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="card" style="width: 14rem;">
-            <img src="<?= base_url('assets/image/foto2.jpeg'); ?>" class="card-img-top" alt="..." width = 259 height = 180>
-            <div class="card-body">
-              <p class="card-text">wtf</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="card" style="width: 14rem;">
-            <img src="<?= base_url('assets/image/foto3.jpg'); ?>" class="card-img-top" alt="..." width = 259 height = 180>
-            <div class="card-body">
-              <p class="card-text">wtf</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="card" style="width: 14rem;">
-            <img src="<?= base_url('assets/image/foto4 .jpg'); ?>" class="card-img-top" alt="..." width = 259 height = 180>
-            <div class="card-body">
-              <p class="card-text">wtf</p>
-            </div>
-          </div>
-        </div>                                  
-      <a class="btn btn-primary btn-lg text-white justify-content-end mb-4" href="#" role="button">Selengkapnya</a>
-    </div>
   <!-- Paket End -->
 
 
@@ -227,107 +202,58 @@
         <div class="col text-center mb-2"><h3>Artikel Pilihan</h3></div>
       </div>
       <div class="row mb-4">
+        <?php
+          $no = 1;
+          foreach($artikel as $ar){
+        ?>  
         <div class="col-md-3">
+          <a href="<?= base_url('c_artikel/detail/'.$ar->id_artikel);?>">
           <div class="card" style="width: 14rem;">
-            <img src="pic2.jpg" class="card-img-top" alt="...">
+            <img src="<?= base_url(); ?>uploads/<?php echo $ar->gambar_artikel; ?>" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p style="text-decoration-color: black;" class="card-text"><?php echo $ar->judul_artikel ?></p>
             </div>
+            </a>
           </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card" style="width: 14rem;">
-            <img src="pic2.jpg" class="card-img-top" alt="..." style="/*height: 250px; */width: 100%">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card" style="width: 14rem;">
-            <img src="pic2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card" style="width: 14rem;">
-            <img src="pic2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row mb-4">
-        <div class="col-md-3">
-          <div class="card" style="width: 14rem;">
-            <img src="pic2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card" style="width: 14rem;">
-            <img src="pic2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card" style="width: 14rem;">
-            <img src="pic2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card" style="width: 14rem;">
-            <img src="pic2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="btn btn-primary btn-lg text-white mb-4" href="#" role="button">Selengkapnya</a>
-    </div>
+        </div><?php } ?>
+  </div><br>
   <!-- Artikel End -->
-
-
+</a>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
 
   <!-- Footer -->
     <footer class="bg-dark text-white pt-5 pb-4">
 
             <!-- BAGIAN MAP -->
-      <div class="container-fluid">
+      <div class="container">
         <div class="row align-items-start">
           <div class="col">
             <div class="mapouter">
                 <div class="gmap_canvas">
                   <iframe width="280" height="180" id="gmap_canvas" src="https://maps.google.com/maps?q=keyto%20tour&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
                   </iframe>
-                  <a href="https://fmovies-online.net"></a>
                   <br>
-                  <style>.mapouter{position:relative;text-align:right;height:200px;width:300px;}</style><a href="https://www.embedgooglemap.net">how to add map to website</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:200px;width:300px;}
+                  <style>.mapouter{position:relative;text-align:right;height:200px;width:300px;}</style><style>.gmap_canvas {overflow:hidden;background:none!important;height:200px;width:300px;}
                   </style>
                 </div>
               </div>
           </div>
           <div class="col">
             <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Keyto Tours & Travel</h5>
-            <p><a href="" class="text-white" style="text-decoration: none;">Bandar Lampung</a></p>
+            <p><a href="" class="text-white" style="text-decoration: none;">Jln. KH Ahmad Dahlan no. 18, Pahoman</a></p>
             </div>
           <div class="col">
             <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contacts</h5>
             <p><i class="fas fa-home mr-3"></i> Bandar Lampung, Indonesia</p>
-            <p><a href="('wa.me/6282184016785')"><i class="fab fa-whatsapp mr-3"></i></a>
-              <a href="https://www.facebook.com/keytotours.lampung"><i class="fab fa-facebook-f mr-3"></i></a>
-              <a href="<https://www.instagram.com/keyto.tourtravel/?"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+            <p class="text-white"><a href="('wa.me/6282184016785')"><i style="font-size:30px;" class="fab fa-whatsapp mr-3"></i></a>
+              <a href="https://www.facebook.com/keytotours.lampung"><i style="text-indent: 5px; font-size:30px" class="fab fa-facebook-f mr-3"></i></a>
+              <a href="<https://www.instagram.com/keyto.tourtravel/?"><i style="text-indent: 5px; font-size:30px" class="fab fa-instagram" aria-hidden="true"></i></a>
             </p>
             <p><a href=""><i class="fas fa-envelope mr-3"></i></a> mail@mail.com </p>
           </div>

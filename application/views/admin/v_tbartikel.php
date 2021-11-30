@@ -56,12 +56,18 @@
 		  </div>  <br> 
 		  <br>
 		  <div class="form-group row">
+		  	<label class="col-sm-2 col-form-label">Pilih File</label>
+		  	<div class="col-sm-10">
+			  <?php echo form_upload('gambar_artikel'); ?>
+			</div>
+		  </div><br>		  
+		  <div class="form-group row">
 		    <div class="col-sm-12">
 		    	<br>
 		      <button type="submit" class="btn btn-success float-right">Simpan</button>
 		      <a href="<?= base_url('c_admartikel'); ?>"><button type="button" class="btn btn-danger float-right">Batalkan</button></a>
 		    </div>
-		  </div>
+		  </div>		  
 		<?php echo form_close();?>
     </div>
 

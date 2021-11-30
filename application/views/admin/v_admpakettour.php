@@ -20,6 +20,7 @@
   </head>
   <body>
     <nav class="navbar navbar-dark bg-primary">
+      <a href="<?= base_url('c_login/logout'); ?>" class="text-right"><button class="btn btn-warning">Logout</button></a>
       <br>
     </nav>
 
