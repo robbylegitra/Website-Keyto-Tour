@@ -83,13 +83,16 @@
         ?> 
       <h2 class="text-center"><?php echo $ar->judul_artikel ?></h2>
       <div class="row">
+        <div class="col-md-4">
+          <img src="<?= base_url(); ?>uploads/<?php echo $ar->gambar_artikel; ?>" alt="..." style="max-width: 300px;">
+        </div>
         <div class="col-md-8">
           <div class="isi-artikel">
           <p><?php echo $ar->isi_artikel ?></p>
           </div>
         </div>
-      </div><?php } ?>  
-    </div>
+      </div> 
+    </div><?php } ?>
 
  <!-- Footer --></div>
     <footer class="bg-dark text-white pt-5 pb-4">

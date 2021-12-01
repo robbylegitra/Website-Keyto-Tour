@@ -75,23 +75,29 @@
       </div>
     </nav><br><br><br>
   <!-- Navbar End -->
-<div class="card text-center">
-        <?php
+  <!-- Artikel Card -->
+  <h2 class="mb-4 mt-2 text-center">Artikel</h2>
+      <?php
           $no = 1;
           foreach($artikel as $ar){
-        ?>    
-  <div class="card-header">
-    Featured
-  </div>
-  <div class="card-body">
-    <h5 class="card-title"><?php echo $ar->judul_artikel ?></h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="<?= base_url('c_artikel/detail/'.$ar->id_artikel);?>" class="btn btn-primary">Lihat Artikel</a>
-  </div>
-  <div class="card-footer text-muted">
-    <?php echo $ar->waktu_artikel ?>
+        ?>
+  <div class="container"> 
+   <div class="card m-3 no-gutters justify-content-center" style="max-width: 800px;">
+      <div class="row g-0">
+        <div class="col-md-3">
+          <img src="<?= base_url(); ?>uploads/<?php echo $ar->gambar_artikel; ?>" class="img-fluid rounded-start" style="max-width: 200px;" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title"><?php echo $ar->judul_artikel ?></h5>
+            <p class="card-text"><small class="text-muted"><?php echo $ar->waktu_artikel ?></small></p>
+          </div>
+          <a href="<?= base_url('c_artikel/detail/'.$ar->id_artikel);?>" class='btn btn-primary'>Lihat Artikel</a>
+        </div>
+      </div>
+    </div>
   </div><?php } ?>
-</div>
+    <!-- Card End -->
 
  <!-- Footer --></div>
     <footer class="bg-dark text-white pt-5 pb-4">

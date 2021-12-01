@@ -11,11 +11,12 @@ class c_admin extends CI_Controller
          if (!$this->session->userdata('username_admin')) 
         {
             redirect('c_login');
-        }    
+        }
+        $this->load->model('m_tbartikel');     
   }
 
   public function index(){		
-		// $data['carousel'] = $this->m_tbcarousel->tampil_data()->result();
+		$data['artikel'] = $this->m_tbartikel->tampil_data()->result();
     $data['admin'] = $this->db->get_where('admin',['username_admin'=>$this->session->userdata('username_admin')])->row_array();
     if ($data['admin']) 
     {
