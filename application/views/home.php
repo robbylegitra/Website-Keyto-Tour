@@ -181,11 +181,13 @@
      
       <div class="row mb-4">        
         <div class="col-md-3">
-          <div class="card" style="width: 14rem;">
+          <a href="">
+            <div class="card" style="width: 14rem;">
             <img src="<?= base_url('assets/image/foto1.gif'); ?>" class="card-img-top" alt="..." width = 259 height = 180>
             <div class="card-body">
               <p class="card-text">wtf</p>
             </div>
+          </a>
           </div>
         </div>
 
@@ -214,8 +216,9 @@
               <p class="card-text">wtf</p>
             </div>
           </div>
-        </div>                                  
-      <a class="btn btn-primary btn-lg text-white justify-content-end mb-4" href="#" role="button">Selengkapnya</a>
+        </div>
+        <br>                                  
+      <a class="btn btn-primary btn-lg text-white mb-4" href="#" role="button">Selengkapnya</a>
     </div>
   <!-- Paket End -->
 
