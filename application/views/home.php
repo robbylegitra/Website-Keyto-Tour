@@ -187,10 +187,10 @@
             <div class="card-body">
               <p class="card-text"><?php echo $pt->label_paket ?></p>
             </div>
-          </div> <br>
+          </div>
         </div> <?php } ?>                              
-    <a class="btn btn-primary btn-lg text-white mb-4" href="<?= base_url('page_tour'); ?>" role="button">Selengkapnya</a>
     </div>
+    <a class="btn btn-primary btn-lg text-white mb-2 ms-auto" href="<?= base_url('page_tour'); ?>" role="button">Selengkapnya</a>
 </div>
 
   <!-- Paket End -->
@@ -213,10 +213,10 @@
             <div class="card-body">
               <p class="card-text"><?php echo $ar->judul_artikel ?></p>
             </div>
-          </div><br>
+          </div>
         </div><?php } ?> 
-            <a class="btn btn-primary btn-lg text-white mb-4" href="<?= base_url('c_artikel'); ?>" role="button">Selengkapnya</a>                               
     </div>
+    <a class="btn btn-primary btn-lg text-white mb-2" href="<?= base_url('c_artikel'); ?>" role="button">Selengkapnya</a>                               
 </div>
   <!-- Artikel End -->
 
