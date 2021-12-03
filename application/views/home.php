@@ -175,149 +175,54 @@
     <div class="container mt-5">
       <div class="row mb-2">
         <div class="col text-center mb-2"><h3>Rekomendasi Paket Perjalanan</h3></div>
-      </div>
-     
-      <div class="row mb-4">        
-        <div class="col-md-3">
-          <a href="">
+      </div>   
+      <div class="row mb-4">
+        <?php
+          $no = 1;
+          foreach($paket_tour as $pt){
+        ?>                 
+        <div class="col-md-3">          
             <div class="card" style="width: 14rem;">
-            <img src="<?= base_url('assets/image/foto1.gif'); ?>" class="card-img-top" alt="..." width = 259 height = 180>
+            <img src="<?= base_url(); ?>uploads/<?php echo $pt->foto_paket; ?>" class="card-img-top" alt="..." width = 259 height = 180>
             <div class="card-body">
-              <p class="card-text">wtf</p>
+              <p class="card-text"><?php echo $pt->label_paket ?></p>
             </div>
-          </a>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="card" style="width: 14rem;">
-            <img src="<?= base_url('assets/image/foto2.jpeg'); ?>" class="card-img-top" alt="..." width = 259 height = 180>
-            <div class="card-body">
-              <p class="card-text">wtf</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="card" style="width: 14rem;">
-            <img src="<?= base_url('assets/image/foto3.jpg'); ?>" class="card-img-top" alt="..." width = 259 height = 180>
-            <div class="card-body">
-              <p class="card-text">wtf</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="card" style="width: 14rem;">
-            <img src="<?= base_url('assets/image/foto4 .jpg'); ?>" class="card-img-top" alt="..." width = 259 height = 180>
-            <div class="card-body">
-              <p class="card-text">wtf</p>
-            </div>
-          </div>
-        </div>                                  
-    </div>
+          </div> <br>
+        </div> <?php } ?>                              
     <a class="btn btn-primary btn-lg text-white mb-4" href="<?= base_url('page_tour'); ?>" role="button">Selengkapnya</a>
+    </div>
+</div>
+
   <!-- Paket End -->
 
 
-
   <!-- Card Group Artikel-->
+
     <div class="container mt-5">
       <div class="row mb-2">
         <div class="col text-center mb-2"><h3>Artikel Pilihan</h3></div>
       </div>
       <div class="row mb-4">
+                   <?php
+          $no = 1;
+          foreach($artikel as $ar){
+        ?>               
         <div class="col-md-3">
-          <a href="">
             <div class="card" style="width: 14rem;">
-            <img src="pic2.jpg" class="card-img-top" alt="...">
+            <img src="<?= base_url(); ?>uploads/<?php echo $ar->gambar_artikel; ?>" class="card-img-top" alt="..." width = 259 height = 180>
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text"><?php echo $ar->judul_artikel ?></p>
             </div>
-          </div>
-          </a>
-        </div>
-        <div class="col-md-3">
-          <a href="">
-            <div class="card" style="width: 14rem;">
-            <img src="pic2.jpg" class="card-img-top" alt="..." style="/*height: 250px; */width: 100%">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-          </a>
-        </div>
-        <div class="col-md-3">
-          <a href="">
-            <div class="card" style="width: 14rem;">
-            <img src="pic2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-          </a>
-        </div>
-        <div class="col-md-3">
-          <a href="">
-            <div class="card" style="width: 14rem;">
-            <img src="pic2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-          </a>
-        </div>
-      </div>
-      <div class="row mb-4">
-        <div class="col-md-3">
-          <a href="">
-            <div class="card" style="width: 14rem;">
-            <img src="pic2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-          </a>
-        </div>
-        <div class="col-md-3">
-          <a href="">
-            <div class="card" style="width: 14rem;">
-            <img src="pic2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-          </a>
-        </div>
-        <div class="col-md-3">
-          <a href="">
-            <div class="card" style="width: 14rem;">
-            <img src="pic2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-          </a>
-        </div>
-        <div class="col-md-3">
-          <a href=""><div class="card" style="width: 14rem;">
-            <img src="pic2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div></a>
-        </div>
-      </div>
-      <a class="btn btn-primary btn-lg text-white mb-4" href="<?= base_url('c_artikel'); ?>" role="button">Selengkapnya</a>
+          </div><br>
+        </div><?php } ?> 
+            <a class="btn btn-primary btn-lg text-white mb-4" href="<?= base_url('c_artikel'); ?>" role="button">Selengkapnya</a>                               
     </div>
+</div>
   <!-- Artikel End -->
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
     </script>
-</a>
-</div>
-</div>
-</div>
   </body>
 
 <!-- Footer -->
