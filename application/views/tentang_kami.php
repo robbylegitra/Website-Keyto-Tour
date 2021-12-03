@@ -45,7 +45,6 @@
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="<?= base_url('c_artikel'); ?>">Artikel</a></li>
                 <li><a class="dropdown-item" href="<?= base_url('c_galeri'); ?>">Galeri</a></li>
-                <li><hr class="dropdown-divider"></li>
               </ul>
             </li>
             <li class="nav-item">
