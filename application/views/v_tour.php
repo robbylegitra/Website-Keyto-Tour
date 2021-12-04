@@ -87,7 +87,7 @@
           <div class="card" style="width: 12rem;">
             <img src="<?= base_url(); ?>uploads/<?php echo $pt->foto_paket; ?>" class="card-img-top" alt="$pt->label_paket" width="150" height="110">
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text"><?php echo $pt->label_paket ?></p>
               <a href="<?php echo base_url(); ?>/c_tbpakettour/download/<?php echo $pt->pdf_paket; ?>" class="btn btn-danger">Unduh PDF</a>
             </div>
           </div>
