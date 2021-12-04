@@ -94,7 +94,7 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="assets/image/haha.jpg" class="d-block w-100" alt="...">
+            <img src="assets/image/fh.jpeg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h1 class="display-4">Keyto Tours & Travel</h1>
               <p class="lead">Not Just a Travel</p>
