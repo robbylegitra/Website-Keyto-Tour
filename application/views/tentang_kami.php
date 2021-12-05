@@ -23,8 +23,8 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-sm" id="mainNav">
       <div class="container">
-        <img src="assets/image/logo.PNG" alt="" width="40" height="40">
-        <a class="navbar-brand ml-3" href="#">Keyto Tour & Travel</a>
+        <img src="<?= base_url('assets/image/logo.PNG'); ?>" alt="" width="30" height="24">
+        <a class="navbar-brand ml-3" href="<?= base_url('c_home'); ?>">Keyto Tour & Travel</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -55,15 +55,26 @@
       </div>
     </nav><br><br><br>
 
-    <br>
     <div class="container">
-      <h2 class="text-center">Tentang Perusahaan</h2>
+      <h2 class="text-center mb-3">Tentang Perusahaan</h2>
       <div class="row">
         <div class="col-md-4">
-          <img src="assets/image/logo.PNG"  style="max-width: 300px;">
+          <img src="<?= base_url('assets/image/pic1.jpg'); ?>" alt="..." style="max-width: 300px;">
         </div>
         <div class="col-md-8">
           <div class="isi-artikel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -75,8 +86,9 @@
       </div>  
     </div><br>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  </body>
 
- <!-- Footer -->
+<!-- Footer -->
     <footer class="bg-dark text-white pt-5 pb-4">
 
             <!-- BAGIAN MAP -->
@@ -87,33 +99,24 @@
                 <div class="gmap_canvas">
                   <iframe width="280" height="180" id="gmap_canvas" src="https://maps.google.com/maps?q=keyto%20tour&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
                   </iframe>
-                  <a href="https://fmovies-online.net"></a>
                   <br>
-                  <style>.mapouter{position:relative;text-align:right;height:200px;width:300px;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:200px;width:300px;}
+                  <style>.mapouter{position:relative;text-align:right;height:200px;width:300px;}</style><style>.gmap_canvas {overflow:hidden;background:none!important;height:200px;width:300px;}
                   </style>
                 </div>
               </div>
           </div>
           <div class="col">
-            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Product</h5>
-            <p><a href="" class="text-white" style="text-decoration: none;">Beranda</a></p>
-            <p><a href="" class="text-white" style="text-decoration: none;">Paket Tour</a></p>
-            <p><a href="" class="text-white" style="text-decoration: none;">Blog</a></p>
-            <p><a href="" class="text-white" style="text-decoration: none;">Tentang Kami</a></p>
-          </div>
-          <div class="col">
-            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Useful Links</h5>
-            <p><a href="" class="text-white" style="text-decoration: none;">Beranda</a></p>
-            <p><a href="" class="text-white" style="text-decoration: none;">Paket Tour</a></p>
-            <p><a href="" class="text-white" style="text-decoration: none;">Blog</a></p>
-            <p><a href="" class="text-white" style="text-decoration: none;">Tentang Kami</a></p>
-          </div>
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Keyto Tours & Travel</h5>
+            <p><a href="" class="text-white" style="text-decoration: none;">Jln. KH Ahmad Dahlan no. 18, Tanjung Karang Timur</a></p>
+            </div>
           <div class="col">
             <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contacts</h5>
             <p><i class="fas fa-home mr-3"></i> Bandar Lampung, Indonesia</p>
-            <p><i class="fas fa-phone mr-3"></i> +62 xxx xxx xxx</p>
-            <p><i class="fas fa-envelope mr-3"></i> mail@mail.com</p>
-            <p><i class="fa fa-whatsapp" aria-hidden="true"></i> +62 xxx xxx xxx</p>
+            <p style="font-size: 30px;"><a href="https://wa.me/6282184016785"><i class="fab fa-whatsapp mr-3"></i></a>
+              <a href="https://www.facebook.com/keytotours.lampung"><i class="fab fa-facebook-f mr-3"></i></a>
+              <a href="https://www.instagram.com/keyto.tourtravel/"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+            </p>
+            <p><a href=""><i class="fas fa-envelope mr-3"></i></a> mail@mail.com </p>
           </div>
         </div>
       </div>
@@ -122,6 +125,5 @@
         <p>Copyright @2021 All right reserved</p>
       </div>
     </footer>
-  <!-- Footer End -->
-  </body>
+  
 </html>
