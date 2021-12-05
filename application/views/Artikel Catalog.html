@@ -16,37 +16,25 @@
   <body>
   <!-- Artikel Card -->
   <h2 class="mb-4 mt-2 text-center">Artikel</h2>
+      <?php
+          $no = 1;
+          foreach($artikel as $ar){
+        ?>
   <div class="container"> 
    <div class="card m-3 no-gutters justify-content-center" style="max-width: 800px;">
       <div class="row g-0">
         <div class="col-md-3">
-          <img src="pic2.jpg" class="img-fluid rounded-start" style="max-width: 200px;" alt="...">
+          <img src="<?= base_url(); ?>uploads/<?php echo $ar->gambar_artikel; ?>" class="img-fluid rounded-start" style="max-width: 200px;" alt="...">
         </div>
         <div class="col-md-8">
           <div class="card-body">
-            <h5 class="card-title">Judul Artikel</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <h5 class="card-title"><?php echo $ar->judul_artikel ?></h5>
+            <p class="card-text"><small class="text-muted"><?php echo $ar->waktu_artikel ?></small></p>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="card m-3 no-gutters" style="max-width: 800px;">
-      <div class="row g-0">
-        <div class="col-md-3">
-          <img src="pic1.jpg" class="img-fluid rounded-start" style="max-width: 200px;" alt="...">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Judul Artikel</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  </div><?php } ?>
     <!-- Card End -->
 
 

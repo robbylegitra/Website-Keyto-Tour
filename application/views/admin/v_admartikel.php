@@ -54,6 +54,8 @@
             <th scope="col">Judul Artikel</th>
             <th scope="col">Waktu Artikel</th>
             <th scope="col">Isi Artikel</th>
+            <th scope="col">Gambar Artikel</th>
+            <th scope="col">Aksi</th>
           </tr>
         </thead>
           <?php
@@ -65,7 +67,9 @@
             <td><?php echo $no++ ?></td>
             <td><?php echo $ar->judul_artikel ?></td>
             <td><?php echo $ar->waktu_artikel ?></td>
-            <td><?php echo $ar->isi_artikel ?></td>            
+            <td><?php echo $ar->isi_artikel ?></td>
+            <td><img src="<?= base_url(); ?>uploads/<?php echo $ar->gambar_artikel; ?>" class="card-img-top" alt="$ar->judul_artikel" width="150" height="110"></td>
+            <td><a href="<?=  base_url('c_tbartikel/hapus/') . $ar->id_artikel; ?>" class="btn btn-small text-danger" onclick="return confirm('Apakah anda yakin ingin menghapus data ini?');"><i class="fas fa-trash"></i> Hapus</a></td>            
           </tr>
         </tbody><?php } ?>
       </table>

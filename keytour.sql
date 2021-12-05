@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 17, 2021 at 05:11 AM
+-- Generation Time: Dec 03, 2021 at 03:42 PM
 -- Server version: 10.4.20-MariaDB
 -- PHP Version: 7.3.29
 
@@ -52,15 +52,19 @@ CREATE TABLE `artikel` (
   `id_artikel` int(11) NOT NULL,
   `judul_artikel` varchar(50) NOT NULL,
   `waktu_artikel` date NOT NULL,
-  `isi_artikel` longtext NOT NULL
+  `isi_artikel` longtext NOT NULL,
+  `gambar_artikel` varchar(500) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `artikel`
 --
 
-INSERT INTO `artikel` (`id_artikel`, `judul_artikel`, `waktu_artikel`, `isi_artikel`) VALUES
-(1, 'tes', '2021-10-30', 'sadasdasd');
+INSERT INTO `artikel` (`id_artikel`, `judul_artikel`, `waktu_artikel`, `isi_artikel`, `gambar_artikel`) VALUES
+(1, 'Artikel 1', '2021-12-03', 'artikel1', 'Capture.PNG'),
+(2, 'Artikel 2', '2021-12-18', 'Artikel 2', '81.jpg'),
+(3, 'Artikel 3', '2021-12-03', 'Artikel 3', 'ERD.png'),
+(4, 'Artikel 4', '2021-12-04', 'artikel 4', 'download.jpg');
 
 -- --------------------------------------------------------
 
@@ -80,8 +84,18 @@ CREATE TABLE `galeri` (
 --
 
 INSERT INTO `galeri` (`id_galeri`, `foto_galeri`, `label_galeri`, `tentang_galeri`) VALUES
-(1, 'WhatsApp_Image_2021-10-25_at_23_37_295.jpeg', 'foto anggara', 'anggara bahagia banget ya ges yakk'),
-(2, 'WhatsApp_Image_2021-11-01_at_21_47_04.jpeg', 'tebe', 'asdad');
+(1, 'mesut-kaya-eOcyhe5-9sQ-unsplash.jpg', '', ''),
+(2, 'paul-gilmore-km74CLco7qs-unsplash.jpg', '', ''),
+(3, 'eva-darron-oCdVtGFeDC0-unsplash.jpg', '', ''),
+(4, 'WhatsApp_Image_2021-11-30_at_10_29_34_(3).jpeg', '', ''),
+(5, 'WhatsApp_Image_2021-11-30_at_10_29_34_(6).jpeg', '', ''),
+(6, 'WhatsApp_Image_2021-11-30_at_10_29_34_(9).jpeg', '', ''),
+(7, 'WhatsApp_Image_2021-11-30_at_10_29_34_(10).jpeg', '', ''),
+(8, 'WhatsApp_Image_2021-11-30_at_10_29_34_(4).jpeg', '', ''),
+(9, 'WhatsApp_Image_2021-11-30_at_10_29_34_(1).jpeg', '', ''),
+(10, 'WhatsApp_Image_2021-11-30_at_10_29_34.jpeg', '', ''),
+(11, 'WhatsApp_Image_2021-11-30_at_10_29_34_(5).jpeg', '', ''),
+(12, 'WhatsApp_Image_2021-11-30_at_10_29_34_(3)1.jpeg', '', '');
 
 -- --------------------------------------------------------
 
@@ -101,8 +115,10 @@ CREATE TABLE `paket_tour` (
 --
 
 INSERT INTO `paket_tour` (`id_paket`, `foto_paket`, `label_paket`, `pdf_paket`) VALUES
-(2, 'plat.jpg', 'Umroh', 'Chekclist_Persiapan_Seminar_TA3.pdf'),
-(3, 'album_2021-10-21_22-41-283.gif', 'wtf', 'Chekclist_Persiapan_Seminar_TA2.pdf');
+(1, '8.jpg', 'Jalan Jalan', 'KopiPedia.pdf'),
+(2, 'images.jpg', 'Old Trafford', 'RA.pdf'),
+(3, 'images2.jpg', 'Liburan', 'KopiPedia1.pdf'),
+(4, 'OIP_(1).jpg', 'Halan Halan', 'RA1.pdf');
 
 --
 -- Indexes for dumped tables
@@ -146,19 +162,19 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `artikel`
 --
 ALTER TABLE `artikel`
-  MODIFY `id_artikel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_artikel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=324;
 
 --
 -- AUTO_INCREMENT for table `galeri`
 --
 ALTER TABLE `galeri`
-  MODIFY `id_galeri` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_galeri` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `paket_tour`
 --
 ALTER TABLE `paket_tour`
-  MODIFY `id_paket` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_paket` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=124;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

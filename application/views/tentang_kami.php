@@ -23,7 +23,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-sm" id="mainNav">
       <div class="container">
-        <img src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24">
+        <img src="assets/image/logo.PNG" alt="" width="40" height="40">
         <a class="navbar-brand ml-3" href="#">Keyto Tour & Travel</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -45,7 +45,6 @@
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="<?= base_url('c_artikel'); ?>">Artikel</a></li>
                 <li><a class="dropdown-item" href="<?= base_url('c_galeri'); ?>">Galeri</a></li>
-                <li><hr class="dropdown-divider"></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -61,7 +60,7 @@
       <h2 class="text-center">Tentang Perusahaan</h2>
       <div class="row">
         <div class="col-md-4">
-          <img src="pic1.jpg" alt="..." style="max-width: 300px;">
+          <img src="assets/image/logo.PNG"  style="max-width: 300px;">
         </div>
         <div class="col-md-8">
           <div class="isi-artikel">

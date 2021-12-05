@@ -63,8 +63,6 @@
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="<?= base_url('c_artikel'); ?>">Artikel</a></li>
                 <li><a class="dropdown-item" href="<?= base_url('c_galeri'); ?>">Galeri</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -75,25 +73,35 @@
       </div>
     </nav><br><br><br>
   <!-- Navbar End -->
-<div class="card text-center">
-        <?php
+  <!-- Artikel Card -->
+  <h2 class="mb-4 mt-2 text-center">Artikel</h2>
+      <?php
           $no = 1;
           foreach($artikel as $ar){
-        ?>    
-  <div class="card-header">
-    Featured
-  </div>
-  <div class="card-body">
-    <h5 class="card-title"><?php echo $ar->judul_artikel ?></h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="<?= base_url('c_artikel/detail/'.$ar->id_artikel);?>" class="btn btn-primary">Lihat Artikel</a>
-  </div>
-  <div class="card-footer text-muted">
-    <?php echo $ar->waktu_artikel ?>
+        ?>
+  <div class="container"> 
+   <div class="card m-3 no-gutters justify-content-center" style="max-width: 800px;">
+      <div class="row g-0">
+        <div class="col-md-3">
+          <img src="<?= base_url(); ?>uploads/<?php echo $ar->gambar_artikel; ?>" class="img-fluid rounded-start" style="max-width: 200px;" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title"><?php echo $ar->judul_artikel ?></h5>
+            <p class="card-text"><small class="text-muted"><?php echo $ar->waktu_artikel ?></small></p>
+          </div>
+          <a href="<?= base_url('c_artikel/detail/'.$ar->id_artikel);?>" class='btn btn-primary ms-3 mb-2'>Lihat Artikel</a>
+        </div>
+      </div>
+    </div>
   </div><?php } ?>
-</div>
+    <!-- Card End -->
+ </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+</body>
 
- <!-- Footer --></div>
+<!-- Footer -->
     <footer class="bg-dark text-white pt-5 pb-4">
 
             <!-- BAGIAN MAP -->
@@ -104,33 +112,24 @@
                 <div class="gmap_canvas">
                   <iframe width="280" height="180" id="gmap_canvas" src="https://maps.google.com/maps?q=keyto%20tour&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
                   </iframe>
-                  <a href="https://fmovies-online.net"></a>
                   <br>
-                  <style>.mapouter{position:relative;text-align:right;height:200px;width:300px;}</style><a href="https://www.embedgooglemap.net">how to add map to website</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:200px;width:300px;}
+                  <style>.mapouter{position:relative;text-align:right;height:200px;width:300px;}</style><style>.gmap_canvas {overflow:hidden;background:none!important;height:200px;width:300px;}
                   </style>
                 </div>
               </div>
           </div>
           <div class="col">
-            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Product</h5>
-            <p><a href="" class="text-white" style="text-decoration: none;">Beranda</a></p>
-            <p><a href="" class="text-white" style="text-decoration: none;">Paket Tour</a></p>
-            <p><a href="" class="text-white" style="text-decoration: none;">Blog</a></p>
-            <p><a href="" class="text-white" style="text-decoration: none;">Tentang Kami</a></p>
-          </div>
-          <div class="col">
-            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Useful Links</h5>
-            <p><a href="" class="text-white" style="text-decoration: none;">Beranda</a></p>
-            <p><a href="" class="text-white" style="text-decoration: none;">Paket Tour</a></p>
-            <p><a href="" class="text-white" style="text-decoration: none;">Blog</a></p>
-            <p><a href="" class="text-white" style="text-decoration: none;">Tentang Kami</a></p>
-          </div>
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Keyto Tours & Travel</h5>
+            <p><a href="" class="text-white" style="text-decoration: none;">Jln. KH Ahmad Dahlan no. 18, Tanjung Karang Timur</a></p>
+            </div>
           <div class="col">
             <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contacts</h5>
             <p><i class="fas fa-home mr-3"></i> Bandar Lampung, Indonesia</p>
-            <p><i class="fas fa-phone mr-3"></i> +62 xxx xxx xxx</p>
-            <p><i class="fas fa-envelope mr-3"></i> mail@mail.com</p>
-            <p><i class="fa fa-whatsapp" aria-hidden="true"></i> +62 xxx xxx xxx</p>
+            <p style="font-size: 30px;"><a href="https://wa.me/6282184016785"><i class="fab fa-whatsapp mr-3"></i></a>
+              <a href="https://www.facebook.com/keytotours.lampung"><i class="fab fa-facebook-f mr-3"></i></a>
+              <a href="https://www.instagram.com/keyto.tourtravel/"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+            </p>
+            <p><a href=""><i class="fas fa-envelope mr-3"></i></a> mail@mail.com </p>
           </div>
         </div>
       </div>
@@ -139,9 +138,5 @@
         <p>Copyright @2021 All right reserved</p>
       </div>
     </footer>
-  <!-- Footer End -->
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
-    </script>
-</body>
 </html>
