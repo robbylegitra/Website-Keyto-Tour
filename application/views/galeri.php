@@ -27,7 +27,7 @@
         height: 175px;
         border-width: 1px;
         padding: 1px;
-        border-style: dotted solid;
+        border-style: solid;
         border-color: black;
 
       }
@@ -42,7 +42,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-sm" id="mainNav">
       <div class="container">
-        <img src="/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24">
+        <img src="<?= base_url('assets/image/logo.PNG'); ?>" alt="" width="30" height="24">
         <a class="navbar-brand ml-3" href="#">Keyto Tour & Travel</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
